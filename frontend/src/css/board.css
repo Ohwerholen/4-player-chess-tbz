@@ -1,0 +1,25 @@
+:root {
+  --board-color-odd: burlywood;
+  --board-color-even: brown;
+}
+
+.chess-board {
+  aspect-ratio: 1/1;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  background-color: var(--board-color-odd);
+  grid-template-columns: repeat(12, 1fr) 0;
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.chess-board>li:nth-child(even) {
+  background-color: var(--board-color-even);
+}
+
+.chess-board img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  user-select: none;
+}
