@@ -1,6 +1,6 @@
 :root {
-  --board-color-odd: burlywood;
-  --board-color-even: brown;
+  --board-color-odd: #799555;
+  --board-color-even: #eaecd0;
 }
 
 .chess-board {
@@ -11,6 +11,7 @@
   background-color: var(--board-color-odd);
   grid-template-columns: repeat(12, 1fr) 0;
   grid-template-rows: repeat(12, 1fr);
+  border: 5px solid black;
 }
 
 .chess-board>li:nth-child(even) {

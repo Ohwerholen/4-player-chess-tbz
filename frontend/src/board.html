@@ -1,17 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Board</title>
-    <link href="css/board.css" rel="stylesheet" />
-    <style>
-      .chess-board {
-        width: 48rem;
-      }
-    </style>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Board</title>
+  <link href="css/board.css" rel="stylesheet" />
+  <style>
+    .chess-board {
+      width: 48rem;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="/frontend/src/img/background/woodbackground-planks.jpg" alt="woodbackground" draggable="false">
+  </img>
+  <span>
     <ul class="chess-board">
       <li><img src="/img/king-w.svg" alt="" draggable="true"></li>
       <li><img src="/img/rook-w.svg" alt="" draggable="true"></li>
@@ -170,5 +175,7 @@
       <li><img src="/img/king-b.svg" alt="" draggable="true"></li>
     </ul>
     <script src="/js/board.js"></script>
-  </body>
+  </span>
+</body>
+
 </html>
