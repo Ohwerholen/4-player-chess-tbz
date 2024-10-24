@@ -3,6 +3,10 @@
   --board-color-even: #eaecd0;
 }
 
+body {
+  background-image: url("../img/background/woodbackground-planks.jpg");
+  background-repeat: repeat-y;
+}
 
 .chess-board {
   aspect-ratio: 1/1;
