@@ -3,6 +3,7 @@
   --board-color-even: #eaecd0;
 }
 
+
 .chess-board {
   aspect-ratio: 1/1;
   padding: 0;
@@ -24,3 +25,4 @@
   aspect-ratio: 1/1;
   user-select: none;
 }
+
