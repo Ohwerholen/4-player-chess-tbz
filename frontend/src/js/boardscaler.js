@@ -3,6 +3,6 @@ let width = window.innerWidth;
 let height = window.innerHeight;
 let chessboard = document.querySelector("chess-board");
 
-const size = Math.min(width, height);
+const size = Math.min(width, height) - 30;
 
-chessboard.style.width = size;
+document.querySelector(".chess-board").style.width = `${size}px`;
