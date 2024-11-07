@@ -1,9 +1,12 @@
 import type { IPiece } from "../../interfaces/IPiece";
 
 export class Rook implements IPiece {
-  constructor() {}
+  readonly name = "rook";
+  public playerNumber: number;
 
-  readonly name = 'rook';
+  constructor(playerNr: number) {
+    this.playerNumber = playerNr;
+  }
 
   public validateMove(cx: number, cy: number, tx: number, ty: number): Boolean {
     // horizontal moves

@@ -1,10 +1,12 @@
 import type { IPiece } from "../../interfaces/IPiece";
-import { BoardUtilities } from "../BoardUtilities";
 
 export class Bishop implements IPiece {
-  readonly name = 'bishop';
+  readonly name = "bishop";
+  public playerNumber: number;
 
-  constructor() {}
+  constructor(playerNr: number) {
+    this.playerNumber = playerNr;
+  }
 
   public validateMove(cx: number, cy: number, tx: number, ty: number): Boolean {
     // diagonal moves

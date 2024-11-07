@@ -2,8 +2,11 @@ import type { IPiece } from "../../interfaces/IPiece";
 
 export class King implements IPiece {
   readonly name = "king";
+  public playerNumber: number;
 
-  constructor() {}
+  constructor(playerNr: number) {
+    this.playerNumber = playerNr;
+  }
 
   public validateMove(cx: number, cy: number, tx: number, ty: number): Boolean {
     // one field in every direction

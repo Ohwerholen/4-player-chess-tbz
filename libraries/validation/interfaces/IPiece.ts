@@ -1,4 +1,5 @@
 export interface IPiece {
-  readonly name: String;
+  readonly name: string;
+  playerNumber: number;
   validateMove(cx: number, cy: number, tx: number, ty: number): Boolean;
 }

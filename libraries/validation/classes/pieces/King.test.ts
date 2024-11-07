@@ -1,5 +1,3 @@
 import { describe } from "bun:test";
 
-describe('Valid King Moves', () => {
-  
-});
+describe("Valid King Moves", () => {});
