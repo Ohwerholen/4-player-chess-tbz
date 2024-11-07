@@ -20,6 +20,10 @@
 
   function handleDragEnd() {
     const { tile, piece } = this.ctx;
+    const priorPiece = tile.querySelector('*');
+
+    if (priorPiece !== null)
+      priorPiece.remove();
 
     piece.remove();
     tile.appendChild(piece);

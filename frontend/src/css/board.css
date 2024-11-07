@@ -1,6 +1,13 @@
 :root {
-  --board-color-odd: burlywood;
-  --board-color-even: brown;
+  --board-color-odd: #799555;
+  --board-color-even: #eaecd0;
+}
+
+body {
+  background-image: url("../img/background/woodbackground-planks.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .chess-board {
@@ -11,6 +18,8 @@
   background-color: var(--board-color-odd);
   grid-template-columns: repeat(12, 1fr) 0;
   grid-template-rows: repeat(12, 1fr);
+  border: 5px solid black;
+  margin: auto;
 }
 
 .chess-board>li:nth-child(even) {
@@ -23,3 +32,4 @@
   aspect-ratio: 1/1;
   user-select: none;
 }
+
