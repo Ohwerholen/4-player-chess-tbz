@@ -1,174 +1,188 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Board</title>
-    <script src="/validation.js" type="module"></script>
-    <link href="css/board.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <span>
-      <ul class="chess-board">
-        <li><img src="/img/king-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/rook-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/bishop-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/knight-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/rook-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/king-y.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li><img src="/img/rook-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/queen-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/knight-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/bishop-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/queen-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/rook-y.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li><img src="/img/knight-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/bishop-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/knight-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/bishop-y.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-w.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-y.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li><img src="/img/bishop-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/knight-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/bishop-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/knight-b.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li><img src="/img/rook-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/queen-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/bishop-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/knight-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/queen-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/rook-b.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li><img src="/img/king-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/rook-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/knight-c.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/pawn-c.svg" alt="" draggable="true" /></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li><img src="/img/pawn-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/bishop-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/rook-b.svg" alt="" draggable="true" /></li>
-        <li><img src="/img/king-b.svg" alt="" draggable="true" /></li>
-      </ul>
-      <script src="./js/boardscaler.js"></script>
-      <script src="/js/board.js" type="module"></script>
-    </span>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Board</title>
+  <link href="css/board.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div>
+    <div class="dropdown">
+      <button type="button">Rules</button>
+      <div class="dropdown-content">
+        <p><strong>1. Board Setup:</strong> The board is 12x12, with each player’s pieces in their corner.</p>
+        <p><strong>2. Players and Turns:</strong> Four players (Red, Blue, Yellow, Green) take turns clockwise, starting from Red.</p>
+        <p><strong>3. Objective:</strong> Checkmate all opponents. There are no teams; every player competes solo.</p>
+        <p><strong>4. Capturing and Eliminations:</strong> Checkmated players’ pieces freeze but remain on the board and can be captured.</p>
+        <p><strong>5. Check and Checkmate:</strong> Checkmated players are eliminated. Stalemates also eliminate players, but their pieces freeze.</p>
+        <p><strong>6. Pawn Promotion:</strong> Pawns promote upon reaching the 8th square, excluding promotion to a king.</p>
+        <p><strong>7. Checkmate Variations:</strong> If multiple players checkmate a king, the last player to check gets points.</p>
+        <p><strong>8. End of Game:</strong> The game ends when only one player remains or three players are eliminated.</p>
+        <p><strong>9. Middle Pawn:</strong> Center pawns choose left or right for their first move, then continue in that direction.</p>
+        
+      </div>
+    </div>
+  <span>
+    <ul class="chess-board">
+      <li><img src="/img/king-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/rook-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/bishop-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/knight-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/rook-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/king-y.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li><img src="/img/rook-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/queen-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/knight-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/bishop-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/queen-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/rook-y.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li><img src="/img/knight-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/bishop-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/knight-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/bishop-y.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-w.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-y.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li><img src="/img/bishop-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/knight-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/bishop-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/knight-b.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li><img src="/img/rook-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/queen-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/bishop-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/knight-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/queen-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/rook-b.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li><img src="/img/king-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/rook-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/knight-c.svg" alt="" draggable="true"></li>
+      <li><img src="/img/pawn-c.svg" alt="" draggable="true"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li><img src="/img/pawn-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/bishop-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/rook-b.svg" alt="" draggable="true"></li>
+      <li><img src="/img/king-b.svg" alt="" draggable="true"></li>
+    </ul>
+    <script src="./js/boardscaler.js"></script>
+    <script src="/js/board.js" type="module"></script>
+  </span>
+
+</body>
