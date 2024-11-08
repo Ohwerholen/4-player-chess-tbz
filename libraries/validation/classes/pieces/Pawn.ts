@@ -8,5 +8,5 @@ export class Pawn implements IPiece {
     this.playerNumber = playerNr;
   }
 
-  validateMove(cx: number, cy: number, tx: number, ty: number): Boolean {}
+  validateMove(cx: number, cy: number, tx: number, ty: number): Boolean {return true;}
 }

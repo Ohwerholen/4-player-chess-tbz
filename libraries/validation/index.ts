@@ -1,5 +1,6 @@
 // export * from "./interfaces/IPiece";
 export * from "./classes/BoardConfiguration";
+export * from "./classes/BoardUtilities";
 export * from "./classes/Board";
 export * from "./classes/pieces/King";
 export * from "./classes/pieces/Pawn";
