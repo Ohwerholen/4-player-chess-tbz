@@ -20,9 +20,9 @@ export class Board {
     this.tiles[y * 12 + x] = piece;
   }
 
-  public move(from: String, to: String): boolean | null {
-    const { x: cx, y: cy } = BoardUtilities.strToXY(from);
-    const { x: tx, y: ty } = BoardUtilities.strToXY(to);
+  public move(from: number, to: number): boolean | null {
+    const { x: cx, y: cy } = BoardUtilities.indexToXY(from);
+    const { x: tx, y: ty } = BoardUtilities.indexToXY(to);
 
     const piece = this.getPiece(cx, cy);
     if (piece === undefined) return null;
