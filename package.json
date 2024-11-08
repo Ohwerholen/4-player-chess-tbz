@@ -1,6 +1,10 @@
 {
   "scripts": {
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "reset-dist": "rm -rf dist/; mkdir dist/",
+    "build-frontend": "cp -r frontend/src/* dist/",
+    "build-lib": "bun build --target browser --outfile dist/validation.js ./libraries/validation/index.ts",
+    "build": "bun run reset-dist;bun run build-frontend;bun run build-lib"
   },
   "dependencies": {
     "prettier": "^3.3.3"
